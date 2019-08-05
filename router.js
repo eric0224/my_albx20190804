@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const pagesControllers = require('./controllers/pagesControllers.js')
+const pagesControllers = require('./controllers/pagesControllers.js');
+const userController = require('./controllers/userController.js');
 
 // 后台页面
-router.get('/admin/index', pagesControllers.getAdminIndexPage)
+router.get('/admin/', pagesControllers.getAdminIndexPage)
     .get('/admin/categories', pagesControllers.getAdminCategoriesPage)
     .get('/admin/comments', pagesControllers.getAdminCommentsPage)
     .get('/admin/login', pagesControllers.getAdminLoginPage)
@@ -21,6 +22,9 @@ router.get('/admin/index', pagesControllers.getAdminIndexPage)
     .get('/detail', pagesControllers.getDetailPage)
     .get('/list', pagesControllers.getListPage)
 
+
+    // 业务处理
+    .post('/login', userController.login)
 
 
 
