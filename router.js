@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pagesControllers = require('./controllers/pagesControllers.js');
 const userController = require('./controllers/userController.js');
+const postsController = require('./controllers/postsController.js')
 
 // 后台页面
 router.get('/admin/', pagesControllers.getAdminIndexPage)
@@ -24,8 +25,10 @@ router.get('/admin/', pagesControllers.getAdminIndexPage)
 
 
     // 业务处理
+    // 实现登陆页
     .post('/login', userController.login)
-
+    // 实现所有文章页的数据
+    .get('/getAllPosts', postsController.getAllPosts);
 
 
 
