@@ -11,9 +11,9 @@ exports.getAllPosts = (req, res) => {
                 msg: '获取数据失败'
             })
         } else {
-            for (let i = 0; i < data.length; i++) {
-                data[i].created = moment(data[i].created).format('YYYY-MM-DD hh:mm:ss')
-            }
+            // for (let i = 0; i < data.length; i++) {
+            //     data[i].created = moment(data[i].created).format('YYYY-MM-DD hh:mm:ss')
+            // }
             res.json({
                 code: 200,
                 msg: '获取数据成功',

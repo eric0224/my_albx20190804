@@ -16,7 +16,7 @@ $(function () {
                     $('.alert-danger').fadeIn(500).delay(1500).fadeOut(500);
                     $('.alert-danger>span').text(res.msg);
                 } else {
-                    location.href = '/admin/'
+                    location.href = '/admin/index'
                 }
             }
         });
