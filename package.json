@@ -19,9 +19,9 @@
   "homepage": "https://github.com/eric0224/my_albx20190804#readme",
   "dependencies": {
     "art-template": "^4.13.2",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "ejs": "^2.6.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-session": "^1.16.2",
     "moment": "^2.24.0",
     "mysql": "^2.17.1"
